@@ -17,12 +17,12 @@ function submitData(username, useremail){
     .then(function(userData){
        const idParagrapgh = document.createElement("p");
        idParagrapgh.textContent = userData.id;
-       document.querySelector("body").appendChild(idParagrapgh);
+       document.body.appendChild(idParagrapgh);
     })
     .catch(function(error){
         const errorParagraph = document.createElement("p");
         errorParagraph.textContent = error.message;
-        document.querySelector("body").appendChild(errorParagraph);
+        document.body.appendChild(errorParagraph);
     })
 }
 
